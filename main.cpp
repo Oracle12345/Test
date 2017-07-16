@@ -1,10 +1,12 @@
-#include <iostream>
+#include "lib_01.h"
 
 int main(int argc, char const *argv[]) {
 
   setlocale(LC_ALL, "Russian");
 
-  std::cout << "Hello World!" << std::endl;
+  Test* t = new Test();
+
+  t->print_str();
 
   return 0;
 }
